@@ -13,13 +13,23 @@ interface ArticleProps {
 export const Article = ({ fileName, title, date }: ArticleProps) => {
   const [markdown, setMarkdown] = useState<string>("");
 
-  useEffect(() => {
+  const fetchAndSetMarkdown = () => {
     fetch(`/markdown/${fileName}.md`).then((response) => {
       response.text().then((text) => {
         const withImgLinks = text.replace(/\!\!BASE_URL\!\!/gim, IMG_BASE_URL);
         setMarkdown(withImgLinks);
       });
     });
+  };
+
+  useEffect(() => {
+    fetchAndSetMarkdown();
+
+    if (import.meta.hot) {
+      import.meta.hot.on("markdown-update", () => {
+        fetchAndSetMarkdown();
+      });
+    }
   }, []);
 
   return (

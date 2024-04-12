@@ -48,4 +48,13 @@ export const ArticlesMetadata: ArticleMetadataEntry[] = sortArticlesByDateDesc([
     year: 2022,
     icon: "https://www.wackyprint.com/designcodes/0/1/110/11100253.png",
   },
+  {
+    title: "2022/2023 Retrospective",
+    fileName: "2023 Retrospective",
+    path: "2023 Retrospective",
+    month: "April",
+    day: 12,
+    year: 2024,
+    icon: "https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1045474846W10000H3165/views/1,width=1200,height=630,appearanceId=839,backgroundColor=F2F2F2/2023-sticker.jpg",
+  },
 ]);
