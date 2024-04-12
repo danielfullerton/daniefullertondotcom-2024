@@ -19,7 +19,7 @@ export const ArticleList = () => {
       <div className="mt-4">
         <div className="overflow-y-auto max-h-64">
           {ArticlesMetadata.map((entry) => (
-            <div className="mb-4">
+            <div className="mb-4" key={entry.title}>
               <ArticleEntry articleMetadataEntry={entry} />
             </div>
           ))}

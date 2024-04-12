@@ -13,14 +13,26 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />}>
           {ArticlesMetadata.map(
-            ({ fileName, title, day, month, year, path }) => (
+            ({
+              fileName,
+              title,
+              day,
+              month,
+              year,
+              path,
+              icon,
+              description,
+            }) => (
               <Route
+                key={fileName}
                 path={path}
                 element={
                   <Article
                     fileName={fileName}
                     title={title}
                     date={getArticleDate(month, day, year)}
+                    icon={icon}
+                    description={description}
                   />
                 }
               />

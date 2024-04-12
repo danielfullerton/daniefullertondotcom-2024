@@ -8,6 +8,7 @@ export interface ArticleMetadataEntry {
   day: number;
   year: number;
   icon: string;
+  description: string;
 }
 
 const sortArticlesByDateDesc = (articles: ArticleMetadataEntry[]) =>
@@ -29,6 +30,8 @@ export const ArticlesMetadata: ArticleMetadataEntry[] = sortArticlesByDateDesc([
     day: 30,
     year: 2022,
     icon: "https://www.adcogov.org/sites/default/files/2021.png",
+    description:
+      "A look back at my 2021 accomplishments, goals and milestones.",
   },
   {
     title: "Converting Markdown to HTML",
@@ -38,6 +41,7 @@ export const ArticlesMetadata: ArticleMetadataEntry[] = sortArticlesByDateDesc([
     day: 23,
     year: 2022,
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png",
+    description: "How I convert Markdown to HTML for my blog.",
   },
   {
     title: "How to Connect a Google Domain to AWS Route 53",
@@ -47,6 +51,7 @@ export const ArticlesMetadata: ArticleMetadataEntry[] = sortArticlesByDateDesc([
     day: 3,
     year: 2022,
     icon: "https://www.wackyprint.com/designcodes/0/1/110/11100253.png",
+    description: "Setting up Route 53 to work with Google Domains.",
   },
   {
     title: "2022/2023 Retrospective",
@@ -56,5 +61,7 @@ export const ArticlesMetadata: ArticleMetadataEntry[] = sortArticlesByDateDesc([
     day: 12,
     year: 2024,
     icon: "https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1045474846W10000H3165/views/1,width=1200,height=630,appearanceId=839,backgroundColor=F2F2F2/2023-sticker.jpg",
+    description:
+      "Taking a look back to the latter half of 2022 and all of 2023, with a nod to my plans in 2024 as well.",
   },
 ]);

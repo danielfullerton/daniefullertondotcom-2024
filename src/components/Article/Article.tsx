@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 import { IMG_BASE_URL } from "../../globalConfig";
@@ -8,9 +9,17 @@ interface ArticleProps {
   fileName: string;
   title: string;
   date: string;
+  icon: string;
+  description: string;
 }
 
-export const Article = ({ fileName, title, date }: ArticleProps) => {
+export const Article = ({
+  fileName,
+  title,
+  date,
+  icon,
+  description,
+}: ArticleProps) => {
   const [markdown, setMarkdown] = useState<string>("");
 
   const fetchAndSetMarkdown = () => {
@@ -34,6 +43,12 @@ export const Article = ({ fileName, title, date }: ArticleProps) => {
 
   return (
     <div className="flex justify-center">
+      <Helmet>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={icon} />
+      </Helmet>
       <div className="max-w-full p-4">
         <Link to="/" className="text-blue-400">
           Back to Home
