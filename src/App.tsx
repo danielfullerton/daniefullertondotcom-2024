@@ -1,25 +1,24 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import { Divider } from "./components/Divider";
-import { Intro } from "./components/Intro";
-import { SocialIcons } from "./components/SocialIcons";
-import { Technologies } from "./components/Technologies";
-import { WorkExperiences } from "./components/WorkExperiences";
+import { Article } from "./components/Article/Article";
+import { Articles } from "./pages/Articles";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <div className="flex justify-center">
-        <div className="p-8 max-w-5xl">
-          <Intro />
-          <Divider />
-          <WorkExperiences />
-          <Divider />
-          <Technologies />
-          <Divider />
-          <SocialIcons />
-        </div>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/articles" element={<Articles />}>
+          <Route
+            path="test-article"
+            element={
+              <Article fileName="test-article.md" title="Test Article" />
+            }
+          />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
