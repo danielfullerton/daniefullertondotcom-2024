@@ -1,8 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import { ArticlesMetadata } from "./articles-metadata";
 import { Article } from "./components/Article/Article";
 import { Articles } from "./pages/Articles";
 import { Home } from "./pages/Home";
+import { getArticleDate } from "./util/date";
 
 function App() {
   return (
@@ -10,12 +12,20 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />}>
-          <Route
-            path="test-article"
-            element={
-              <Article fileName="test-article.md" title="Test Article" />
-            }
-          />
+          {ArticlesMetadata.map(
+            ({ fileName, title, day, month, year, path }) => (
+              <Route
+                path={path}
+                element={
+                  <Article
+                    fileName={fileName}
+                    title={title}
+                    date={getArticleDate(month, day, year)}
+                  />
+                }
+              />
+            )
+          )}
         </Route>
       </Routes>
     </Router>
