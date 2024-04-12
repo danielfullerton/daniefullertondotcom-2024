@@ -1,5 +1,6 @@
 import { faHammer } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IMG_BASE_URL } from "../../../globalConfig";
 import { Technology } from "./Technology";
 
 const WebDevTech = () => {
@@ -10,36 +11,36 @@ const WebDevTech = () => {
         <div className="flex justify-between w-full mb-4">
           <Technology
             direction="forward"
-            imgLink="https://miro.medium.com/v2/resize:fit:800/1*bc9pmTiyKR0WNPka2w3e0Q.png"
+            imgLink={`${IMG_BASE_URL}/nodejs.png`}
             name="Node.js"
           />
           <Technology
             direction="reverse"
-            imgLink="https://nestjs.com/img/logo-small.svg"
+            imgLink={`${IMG_BASE_URL}/nestjs.svg`}
             name="NestJS"
           />
         </div>
         <div className="flex justify-between w-full mb-4">
           <Technology
             direction="forward"
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+            imgLink={`${IMG_BASE_URL}/react.png`}
             name="React"
           />
           <Technology
             direction="reverse"
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+            imgLink={`${IMG_BASE_URL}/typescript.png`}
             name="Typescript"
           />
         </div>
         <div className="flex justify-between w-full mb-4">
           <Technology
             direction="forward"
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+            imgLink={`${IMG_BASE_URL}/tailwind.png`}
             name="Tailwind CSS"
           />
           <Technology
             direction="reverse"
-            imgLink="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1024px-Microsoft_.NET_logo.svg.png"
+            imgLink={`${IMG_BASE_URL}/dotnet.png`}
             name=".NET"
           />
         </div>
@@ -57,24 +58,24 @@ const DataTech = () => {
         <div className="flex justify-between w-full mb-4">
           <Technology
             direction="forward"
-            imgLink="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_spark_logo_icon_170560.png"
+            imgLink={`${IMG_BASE_URL}/spark.png`}
             name="Spark"
           />
           <Technology
             direction="reverse"
-            imgLink="https://avatars.githubusercontent.com/u/57059?s=280&v=4"
+            imgLink={`${IMG_BASE_URL}/scala.png`}
             name="Scala"
           />
         </div>
         <div className="flex justify-between w-full mb-4">
           <Technology
             direction="forward"
-            imgLink="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-19aS9Ot8lbEKevQLDqIWKUhPEi4Xzd7wkPd1yTmdg&s"
+            imgLink={`${IMG_BASE_URL}/databricks.png`}
             name="Databricks"
           />
           <Technology
             direction="reverse"
-            imgLink="https://logowik.com/content/uploads/images/azure-data-factory2539.jpg"
+            imgLink={`${IMG_BASE_URL}/adf.jpg`}
             name="Azure Data Factory"
           />
         </div>

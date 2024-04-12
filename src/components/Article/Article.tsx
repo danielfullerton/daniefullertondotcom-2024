@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
+import { IMG_BASE_URL } from "../../globalConfig";
 import "./Article.css";
 
 interface ArticleProps {
@@ -14,7 +16,8 @@ export const Article = ({ fileName, title, date }: ArticleProps) => {
   useEffect(() => {
     fetch(`/markdown/${fileName}.md`).then((response) => {
       response.text().then((text) => {
-        setMarkdown(text);
+        const withImgLinks = text.replace(/\!\!BASE_URL\!\!/gim, IMG_BASE_URL);
+        setMarkdown(withImgLinks);
       });
     });
   }, []);
@@ -22,9 +25,9 @@ export const Article = ({ fileName, title, date }: ArticleProps) => {
   return (
     <div className="flex justify-center">
       <div className="max-w-full p-4">
-        {/* <Link to="/" className="text-blue-400">
+        <Link to="/" className="text-blue-400">
           Back to Home
-        </Link> */}
+        </Link>
         <h1
           id="title"
           className="text-center text-3xl font-bold leading-tight my-8"

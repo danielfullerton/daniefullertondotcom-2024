@@ -13,7 +13,7 @@ topics that interest me in bits and pieces. 2021 was a crazy year for all of us,
 
 # We bought a house!
 
-![(The only photo I had on hand was from Halloween)](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/house_halloween.jpeg)
+![(The only photo I had on hand was from Halloween)](!!BASE_URL!!/house_halloween.jpeg)
 
 The first major event of last year was buying a house, which itself is something that I could probably write dozens of posts about. In December 2020,
 my wife and I had been engaged for a few months and decided that we were ready to upgrade from apartment living. We were fortunate
@@ -30,7 +30,7 @@ We love having the extra space, and the ability to make it our own.
 
 # We got married!
 
-![The newlyweds](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/wedding.jpeg)
+![The newlyweds](!!BASE_URL!!/wedding.jpeg)
 
 In April, we sealed the deal and got married! We had a perfect wedding and everything went off without a hitch. I'll walk you through the day piece by piece, at
 least from my own perspective. First off, I got maybe 3 hours of sleep the night before. I am amazed that I was able to get through such a long day on so
@@ -53,7 +53,7 @@ had. We went to Key Largo and spent a week sipping on Mai Tais in an oceanfront 
 
 # Our first child - it's not a human
 
-![Our goodest boy, Atlas](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/atlas.jpg)
+![Our goodest boy, Atlas](!!BASE_URL!!/atlas.jpg)
 
 This little guy has had such a huge impact on our lives in a way we never could have expected. Of course everyone says that dog is man's best friend,
 but he's more like an equal family member to us. Some time in June, for absolutely no reason, I came inside from doing some work in the yard and told
@@ -75,7 +75,7 @@ are not aggressive dogs, Atlas is the one. He's just about the sweetest dog I've
 
 # If you give a man a table saw...
 
-![My new table saw!](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/table_saw.jpg)
+![My new table saw!](!!BASE_URL!!/table_saw.jpg)
 
 For my birthday in July, my wife got me something I'd been wanting for some time that we finally had the space for - a table saw! To
 be economical, both financially and space-wise, I got a job-site DeWalt table saw. I think people seriously underestimate these little
@@ -89,22 +89,22 @@ as it turns out, I really enjoy woodworking. Since getting the table saw, I've s
 lumber and more. It's become one of my favorite hobbies, and building tangible things you can put use and put your hands
 on has been a nice contrast to my professional passion of building software.
 
-![First shop cabinet I built](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/drill_station.jpg)
+![First shop cabinet I built](!!BASE_URL!!/drill_station.jpg)
 
 Most of my time in the shop so far has been spent working on shop projects. In my opinion, this is a great way to dive into woodworking
 since you can get away with using cheaper materials (for example, I mostly use Radiata Pine plywood). You can live with small inaccuracies and mistakes working on these projects.
 I've gotten a lot of practice this way building cabinets, shelves and more. Now when the time comes to build a bathroom vanity or some kitchen cabinets, I'll know what I'm doing!
 
-![Power tool cabinet](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/power_tool_cabinet.jpg)
+![Power tool cabinet](!!BASE_URL!!/power_tool_cabinet.jpg)
 
 My shop right now is mostly built around a French cleat system, using strips of wood cut with a 45-degree notch so that custom hangers can be made with opposing angles. This
 is great, especially since I'm still figuring things out, as it keeps my shop reconfigurable and functional.
 
-![Wide angle shot of workshop](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/entire_shop.jpg)
+![Wide angle shot of workshop](!!BASE_URL!!/entire_shop.jpg)
 
 # Reprogramming
 
-![Some random guy programming](https://devdaniel-io-assets.s3.us-east-2.amazonaws.com/public/img/coding.jpeg)
+![Some random guy programming](!!BASE_URL!!/coding.jpeg)
 
 If there's any negative consequence of such a fun, busy year like this one, it's that I radically shifted my focus away from coding. In the 5 or 6 years before this one, I would spend more than 12 hours a day
 programming. Of course, I still write code nearly every day for my full-time job, and like most programmers I still learn and tinker plenty. However, outside of work, coding definitely took a back seat for a solid 6 months, and

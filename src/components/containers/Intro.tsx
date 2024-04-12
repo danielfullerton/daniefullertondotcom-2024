@@ -1,3 +1,5 @@
+import { IMG_BASE_URL } from "../../globalConfig";
+
 export const Intro = () => {
   return (
     <div className="flex flex-col md:flex-row md:items-center">
@@ -10,7 +12,7 @@ export const Intro = () => {
         <div className="flex justify-center">
           <img
             className="rounded-lg shadow-xl max-w-64"
-            src="/danielfullerton.jpg"
+            src={`${IMG_BASE_URL}/profile.png`}
             alt="Daniel Fullerton"
           />
         </div>

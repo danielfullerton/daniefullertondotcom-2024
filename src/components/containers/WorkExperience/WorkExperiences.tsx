@@ -1,5 +1,6 @@
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IMG_BASE_URL } from "../../../globalConfig";
 import { WorkExperience } from "./WorkExperience";
 
 export const WorkExperiences = () => {
@@ -20,19 +21,19 @@ export const WorkExperiences = () => {
           title="Software Engineer"
           dates="2022 - Present"
           location="Microsoft"
-          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomToXdaITnDNh_gfzvynzTWnrpkleOrZpsdIOTAYPWA&s"
+          img={`${IMG_BASE_URL}/msft.png`}
         />
         <WorkExperience
           title="Software Engineer"
           dates="2020 - 2022"
           location="T-Mobile"
-          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIz9mtgLNC7NDZHlod0aQQ0wY6vx-h99yDkU75pAZbw&s"
+          img={`${IMG_BASE_URL}/tmobile.png`}
         />
         <WorkExperience
           title="Software Applications Developer"
           dates="2017 - 2020"
           location="Randstad"
-          img="https://www.randstadusa.com/themes/custom/bluex/src/assets/img/logo-bluex.png"
+          img={`${IMG_BASE_URL}/randstad.png`}
         />
       </div>
     </>

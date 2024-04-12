@@ -14,7 +14,7 @@ export const WorkExperience = ({
   return (
     <div className="flex items-center justify-between mb-4 max-w-sm">
       <div className="flex items-center">
-        <img src={img} alt="MSFT" className="w-8 h-8 mr-4" />
+        <img src={img} alt={title} className="w-8 h-8 mr-4" />
         <div className="flex flex-col">
           <span className="text-xl">{location}</span>
           <span className="text-xs text-gray-600">{title}</span>
