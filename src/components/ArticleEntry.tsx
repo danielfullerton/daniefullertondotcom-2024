@@ -7,7 +7,7 @@ interface ArticleEntryProps {
 }
 
 export const ArticleEntry = ({ articleMetadataEntry }: ArticleEntryProps) => {
-  const { title, month, day, year, icon, path } = articleMetadataEntry;
+  const { title, month, day, year, path } = articleMetadataEntry;
 
   return (
     <Link to={`/articles/${path}`} className="text-xl">
